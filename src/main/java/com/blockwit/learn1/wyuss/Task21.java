@@ -6,7 +6,7 @@ public class Task21 {
 
         int[] num = {23, 56, 21, 67, 98};
 
-        for (int i = num.length - 1  ; i >= 0; i--) {
+        for (int i = 0 ; i < num.length; i++) {
             System.out.println(num[i]);
 
         }
