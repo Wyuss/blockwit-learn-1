@@ -1,12 +1,12 @@
 package com.blockwit.learn1.wyuss;
 
-public class Task21 {
+public class Task22 {
 
     public static void main(String[] arg) {
 
-        int[] num = {23, 56, 21, 67, 98};
+        int[] num = {223, 766, 487, 23};
 
-        for (int i = num.length - 1  ; i >= 0; i--) {
+        for (int i = 0; i < num.length; i = i + 2) {
             System.out.println(num[i]);
 
         }
