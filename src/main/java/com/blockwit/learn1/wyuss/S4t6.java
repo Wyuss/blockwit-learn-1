@@ -25,7 +25,7 @@ public class S4t6 {
                 }
                 for (int i=0; i<4; i++) {
 
-                System.out.println("Вы ввели числа: " + numbers[i]);
+                    System.out.println("Вы ввели числа: " + numbers[i]);
                 }
 
 
