@@ -1,9 +1,9 @@
 package com.blockwit.learn1.wyuss;
 
 public class Book {
-    String name;
-    String author;
-    int yearOfIssue;
+    private static String name;
+    private static String author;
+    private static int yearOfIssue;
 
 
 }
