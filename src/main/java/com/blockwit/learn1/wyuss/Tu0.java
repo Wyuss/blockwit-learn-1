@@ -15,7 +15,6 @@ public class Tu0 {
             boolean sorted = false;
             while (!sorted) {
                 sorted = true;
-
                 for (int i = 0; i<array.length-1; i++){
                     if (array[i] > array[i+1]){
                         temp = array[i];
@@ -26,8 +25,8 @@ public class Tu0 {
                 }
             }
             System.out.print("Числа в порядке возрастания: ");
-            for (int i : array) {
-                System.out.print( i + " ");
+            for (int i = 0; i < array.length; i++) {
+                System.out.print( array[i] + " ");
             }
     }
 }
