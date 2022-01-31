@@ -5,28 +5,18 @@ public class Tu0 {
          1. Распечатать его.
          2. Отсортировать его.
          3. Распечатать еще раз.*/
+
         int [] array = {12, 7, 89, -4, 8, 9};
+
+        Helper helper = new Helper();
+        Utils utils = new Utils();
+
         System.out.print("Исходные числа: ");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
-            System.out.println();
-            int temp;
-            boolean sorted = false;
-            while (!sorted) {
-                sorted = true;
-                for (int i = 0; i<array.length-1; i++){
-                    if (array[i] > array[i+1]){
-                        temp = array[i];
-                        array[i] = array[i+1];
-                        array[i+1]= temp;
-                        sorted = false;
-                    }
-                }
-            }
-            System.out.print("Числа в порядке возрастания: ");
-            for (int i = 0; i < array.length; i++) {
-                System.out.print( array[i] + " ");
-            }
+        helper.printIntArray(array); //метод printIntArray принимает массив чисел и распечатывает их.
+        utils.sort(array); // Метод sort принимает массив чисел и сортирует в порядке возрастания.
+
+        System.out.print("Числа в порядке возрастания: ");
+        helper.printIntArray(array); //метод printIntArray принимает массив чисел и распечатывает их.
+
     }
 }
