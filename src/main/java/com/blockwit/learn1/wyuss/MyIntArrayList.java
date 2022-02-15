@@ -31,11 +31,10 @@ public class MyIntArrayList {
     }
 
     public int size () {
-        return list.length;
+        return count;
     }
     public void clear () {
-        for (int i = 0; i < list.length; i++) {
-            list [i] = 0;
-        }
+        int[] clearList = new int [0];
+        list = clearList;
     }
 }
